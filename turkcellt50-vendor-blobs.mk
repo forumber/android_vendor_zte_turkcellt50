@@ -55,7 +55,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
-
 # MP
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/mpdecision:system/bin/mpdecision \
@@ -78,6 +77,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+
+# Thermal Engine
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+    $(LOCAL_PATH)/proprietary/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
 
 ######### from P862A11_CRICKET
 
@@ -235,14 +241,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/irsc_util:system/bin/irsc_util \
     $(LOCAL_PATH)/proprietary/etc/sec_config:system/etc/sec_config
-
-# Thermal Engine
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/thermal-engine:system/bin/thermal-engine \
-    $(LOCAL_PATH)/proprietary/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
-
 
 # Qualcomm framework
 PRODUCT_COPY_FILES += \
